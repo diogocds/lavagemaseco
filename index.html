@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="model.css">
+    <title>Layout Model</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" id="logo"><img src="logo_jmlavagem.png" alt="logo jm lavagem a seco"></a>
+        <button id="openMenu">&#9776;</button>
+        <nav id="menu">
+            <button id="closeMenu">X</button>
+            <a href="#inicio">Inicio</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#contatos">Contato</a>
+        </nav>
+    </header>
+    <section class="section menu-spacing" id="inicio">
+        <h1>Inicio</h1>
+    </section>
+    <section class="section menu-spacing" id="produtos">
+        <h1>Produtos</h1>
+    </section>
+    <section class="section menu-spacing" id="galeria">
+        <h1>Galeria</h1>
+        <div class="gallery-img"><img src="colchao2jm.png" alt="cadeiras sujas e limpas">
+        </div>
+        <div class="gallery-img"><img src="sofajm.png" alt="sofa sujo e limpo">
+        </div>
+        <div class="gallery-img"><img src="colchaojm.png" alt="cadeiras sujas e limpas">
+        </div>
+        <div class="gallery-img"><img src="colchajmad.png" alt="colchao sujo e limpo">
+        </div>
+    </section>
+    <fieldset>
+        <div>
+            <form action="https://api.staticforms.xyz/submit" method="POST" class="form" id="contatos">
+                <h2>Formulário de Contato</h2>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" required />
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required />
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" required></textarea>
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="accessKey" value="40f68e6c-e06a-4017-a72f-5ba81b631be1">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/layout%20model/modelsaudaca.html">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </fieldset>
+    <footer>
+        <div class="footer">
+            <a href="#">Desenvolvido Por - Diogo Cunha 😎</a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="model.js">
+    </script>
+</body>
+
+</html>
