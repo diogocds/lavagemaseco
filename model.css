@@ -33,7 +33,7 @@ body {
 header {
     display: flex;
     flex: 1 1 100vh;
-    max-width: 100%;
+    width: 100%;
     background: white;
     border-bottom: 1px solid black;
     position: fixed;
@@ -46,6 +46,7 @@ header {
         flex: 0 1 200px;
         background: white;
         position: relative;
+        margin-top: 10px;
         margin-right: 10px;
         margin-left: 20px;
     }
@@ -54,18 +55,18 @@ header {
 
 nav {
     display: flex;
-    margin-left: 350px;
-    flex: 1 1 100vh;
+    margin: 0px auto;
+    flex: 0 1 100vh;
     align-items: center;
     background: white;
     justify-content: flex-end;
-    margin-right: 100vh;
+
 
 }
 
 nav a {
     text-transform: uppercase;
-    margin: 5%;
+    margin:0 auto;
     font-size: 20pt;
 }
 
@@ -84,6 +85,7 @@ footer {
 
 
 section {
+    flex: 1 1 100vh;
     margin: 0px auto;
     height: 100%;
     width: 100%;
@@ -117,14 +119,7 @@ a {
     color: inherit;
 }
 
-h3::before,
-h3 {
-    margin-top: 350px;
-    text-align: center;
-    justify-content: center;
-    content: "👍";
-    display: block;
-}
+
 
 #openMenu,
 #closeMenu {
@@ -166,7 +161,7 @@ h3 {
 
 
 .gallery-img img {
-    margin: 10px;
+    margin: 12px;
     align-items: center;
     justify-content: space-between;
     transition: all 300ms ease-in-out;
@@ -180,10 +175,10 @@ h3 {
     align-items: center;
     justify-content: space-between;
     display: inline;
-    width: 100%;
-    max-width: 35rem;
-    max-height: 35rem;
+    width: 100vh;
     overflow: hidden;
+    margin: 0 auto;
+    padding: 5px;
     padding-bottom: 10px;
 }
 
@@ -307,11 +302,12 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 717px) {
+@media only screen and (max-width: 1024px) {
 
     #openMenu,
     #closeMenu {
         display: block;
+
     }
 
     h1 {
@@ -319,7 +315,7 @@ h3 {
     }
 
     #openMenu {
-        margin-left: auto;
+        position: relative;
         margin-right: 100vh;
 
     }
@@ -350,5 +346,9 @@ h3 {
         opacity: 0;
         transition: 0.3s;
 
+    }
+
+    header {
+        width: 100%;
     }
 }
